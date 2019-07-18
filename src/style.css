@@ -108,13 +108,36 @@
   border-bottom-right-radius: 4px;
   background-color: #0abde3;
   cursor: pointer;
+  text-align: center;
+  line-height: 34px;
 }
 
 [AICODER_UI] [InputList] .SearchInput .SearchBtn .SearchBtnFont {
   color: #fff;
-  position: relative;
-  top: 9px;
-  left: 16px;
+}
+
+[AICODER_UI] [Collapse] {
+  border: 1px solid #a4b0be;
+  border-radius: 3px;
+  width: 240px;
+  overflow: hidden;
+}
+
+[AICODER_UI] [fanCollapse] {
+  border-top: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  border-radius: 3px;
+  width: 240px;
+  overflow: hidden;
+}
+
+[AICODER_UI] [fanCollapse] [aicoder_ui] [panellist] .titlePanel {
+  background-color: #fff;
+}
+
+[AICODER_UI] [fanCollapse] [aicoder_ui] [panellist] .PanelMenu:last-child {
+  border-bottom: 1px solid #ccc;
 }
 
 [AICODER_UI] [PanelList] .titlePanel {
@@ -136,7 +159,6 @@
 [AICODER_UI] [PanelList] .PanelMenu {
   height: 150px;
   width: 238px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
@@ -150,8 +172,8 @@
 
 [AICODER_UI] [PanelList] .bounce-enter-active,
 [AICODER_UI] [PanelList] .bounce-leave-active {
-  -webkit-transition: height 1s;
-  transition: height 1s;
+  -webkit-transition: height 0.6s;
+  transition: height 0.6s;
 }
 
 [AICODER_UI] [PanelList] .bounce-enter,
