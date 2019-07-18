@@ -19,7 +19,6 @@ export default {
   // ButtonTitle 按钮の文字
   // type        按钮の样式
   props: ["ButtonTitle", "type"],
-  created() {}
 };
 </script>
 
