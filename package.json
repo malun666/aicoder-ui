@@ -6,6 +6,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "main":"src/index.js",
   "description": "A Vue.js 2.x UI Toolkit for Web.",
   "homepage": "https://malun666.github.io/aicoder-ui/#/",
   "repository": {
