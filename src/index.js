@@ -1,7 +1,9 @@
-import AIButton from "./packages/button/index";
-import AIinput from "./packages/input/index";
+import Button from "./packages/button/index";
+import Input from "./packages/input/index";
+import Collapse from "./packages/Collapse/index";
+import Panel from "./packages/panel/index";
 
-const components = [AIButton, AIinput];
+const components = [Button, Input, Collapse, Panel];
 
 const install = function(Vue) {
   components.forEach(component => {
@@ -15,6 +17,8 @@ if (typeof window !== "undefined" && window.Vue) {
 
 export default {
   install,
-  AIButton,
-  AIinput
+  Button,
+  Input,
+  Collapse,
+  Panel
 };

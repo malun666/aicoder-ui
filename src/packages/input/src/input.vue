@@ -24,7 +24,13 @@
             class="icon iconfont icon-Xtubiao-chakan passwordBtn"
             @click="PassSwitch"
           ></i>
-          <input :disabled="disabled" :type="typeSwitch" class="AllInputStyle" />
+          <input
+            :value="value"
+            v-on:input="$emit('input', $event.target.value)"
+            :disabled="disabled"
+            :type="typeSwitch"
+            class="AllInputStyle"
+          />
         </div>
       </template>
       <template v-else-if="showSearch === true">
@@ -32,9 +38,10 @@
           <input
             type="text"
             :placeholder="placeholder"
-            value="1"
             :disabled="disabled"
             class="AllInputStyle searchinput"
+            :value="value"
+            v-on:input="$emit('input', $event.target.value)"
           />
           <span class="SearchBtn" @click="SearchTextData">
             <i class="icon iconfont icon-sousuo SearchBtnFont"></i>
@@ -42,7 +49,14 @@
         </div>
       </template>
       <template v-else>
-        <input type="text" :placeholder="placeholder" :disabled="disabled" class="AllInputStyle" />
+        <input
+          type="text"
+          :value="value"
+          v-on:input="$emit('input', $event.target.value)"
+          :placeholder="placeholder"
+          :disabled="disabled"
+          class="AllInputStyle"
+        />
       </template>
     </div>
   </div>
@@ -50,7 +64,7 @@
 
 <script>
 export default {
-  name: "AIinput",
+  name: "Input",
   data() {
     return {
       InputData: "", // input的数据
@@ -60,6 +74,10 @@ export default {
     };
   },
   props: {
+    // 实现双向绑定父子件的数据
+    value: {
+      type: String
+    },
     disabled: {
       //是否可用
       type: Boolean,

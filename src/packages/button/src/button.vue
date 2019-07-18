@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "AIbutton",
+  name: "Button",
   data() {
     return {};
   },

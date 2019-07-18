@@ -117,11 +117,53 @@
   left: 16px;
 }
 
+[AICODER_UI] [PanelList] .titlePanel {
+  height: 38px;
+  width: 180px;
+  padding-left: 60px;
+  line-height: 38px;
+  background-color: #dfe4ea;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+[AICODER_UI] [PanelList] .titlePanel .PanelFont {
+  position: absolute;
+  left: 25px;
+}
+
+[AICODER_UI] [PanelList] .PanelMenu {
+  height: 150px;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+[AICODER_UI] [PanelList] .PanelMenu .MenuText {
+  overflow: hidden;
+  width: 218px;
+  height: 100%;
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+[AICODER_UI] [PanelList] .bounce-enter-active,
+[AICODER_UI] [PanelList] .bounce-leave-active {
+  -webkit-transition: height 1s;
+  transition: height 1s;
+}
+
+[AICODER_UI] [PanelList] .bounce-enter,
+[AICODER_UI] [PanelList] .bounce-leave-to {
+  height: 0;
+}
+
 @font-face {
   font-family: "iconfont";
-  src: url("./AI-ui-font/iconfont.eot?t=1563363365066");
+  src: url("./AI-ui-font/iconfont.eot?t=1563420894692");
   /* IE9 */
-  src: url("./AI-ui-font/iconfont.eot?t=1563363365066#iefix") format("embedded-opentype"), url("./AI-ui-font/iconfont.woff?t=1563363365066") format("woff"), url("./AI-ui-font/iconfont.ttf?t=1563363365066") format("truetype"), url("./AI-ui-font/iconfont.svg?t=1563363365066#iconfont") format("svg");
+  src: url("./AI-ui-font/iconfont.eot?t=1563420894692#iefix") format("embedded-opentype"), url("./AI-ui-font/iconfont.woff?t=1563420894692") format("woff"), url("./AI-ui-font/iconfont.ttf?t=1563420894692") format("truetype"), url("./AI-ui-font/iconfont.svg?t=1563420894692#iconfont") format("svg");
   /* iOS 4.1- */
 }
 
@@ -135,6 +177,14 @@
 
 .icon-sousuo:before {
   content: "\e6a3";
+}
+
+.icon-jiantouxia:before {
+  content: "\e63b";
+}
+
+.icon-jiantouyou:before {
+  content: "\e63c";
 }
 
 .icon-Xtubiao-chakan:before {
