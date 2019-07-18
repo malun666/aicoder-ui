@@ -1,29 +1,45 @@
-# moni-ui
+# aicoder-ui
 
-## Project setup
-```
-yarn install
-```
+> A Vue.js 2.0 UI Toolkit for Web.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Links
 
-### Compiles and minifies for production
-```
-yarn run build
+## Install
+
+```shell
+npm install aicoder-ui -S
 ```
 
-### Run your tests
-```
-yarn run test
+## Quick Start
+
+``` javascript
+import Vue from 'vue'
+import AicoderUI from 'aicoder-ui'
+
+Vue.use(AicoderUI)
+
+// or
+import {
+  Button
+  // ...
+} from 'aicoder-ui'
+
+Vue.component(Button.name, Button)
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+## Changelog
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Detailed changes for each release are documented in the [release notes](https://github.com/malun666/aicoder-ui/releases).
+
+## Special Thanks
+
+- [小东童鞋](https://github.com/wydQAQ)
+- [老马](https://github.com/malun666)
+
+## Backers
+
+Support us with a monthly donation and help us continue our activities.
+
+## LICENSE
+
+[MIT](LICENSE)
