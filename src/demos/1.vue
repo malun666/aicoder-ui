@@ -1,25 +1,25 @@
 <template>
   <div>
-    <Button type="is-success" ButtonTitle="成功" />
+    <Button type="is-danger" ButtonTitle="成功" />
     <Input clearable placeholder="asfd " />
+    <Input showSearch @AI-search="searchdemo" />
     <Input showSearch @AI-search="searchdemo" />
     <Input disabled />
     <Input v-model="gh" />
-    <AIcollapse>
+    <Collapse ConciseMode>
       <Panel PanelTitle="1">
         ASDFAS FAS FASFGHGSJKDGHHDFJKHKDHGKHHasasdas
         ASDFAS FAS FASFGHGSJKDGHHDFJKHKDHGKHH
         </Panel>
       <Panel PanelTitle="2"></Panel>
       <Panel PanelTitle="3"></Panel>
-      <!-- <AIpanel></AIpanel> -->
-    </AIcollapse>
+    </Collapse>
 
   </div>
 </template>
 
 <script>
-import { truncate } from "fs";
+
 export default {
   data() {
     return {
